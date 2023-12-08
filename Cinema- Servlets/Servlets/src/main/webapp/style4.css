@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+	overflow:hidden;
+	display:grid;
+	place-content:center;
+	height:100vh;
+	font-family:monospace;
+	background: linear-gradient(120deg,#F66A0E,#15C2DA);
+	color:	#FFF8DC;
+	
+}
+.input-container{
+	width:200px;
+	position:relative;
+
+}
+
+.text-input{
+	padding:0.8rem;
+	border:2px solid #382f26;
+	background:#272530;
+	border-radius:5px;
+	outline:none;
+	transition:all .3s;
+	color:#fff;
+}
+
+.text-input:focus{
+	border:2px solid #fd7f0a;
+}
+
+.text-input::placeholder{
+	opacity:0;
+	transition:all 0.3s;
+}
+.text-input:focus::placeholder{
+	opacity:1;
+	animation-delay:0.2s;
+}
